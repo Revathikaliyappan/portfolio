@@ -1,8 +1,13 @@
 import { useState } from "react";
 
-import salon from "../assets/Salon Dashboard.jpg";
+import salon from "../assets/Saloon.png";
 import restaurant from "../assets/res pos.png";
 import app from "../assets/Home.png";
+import foodDelivery from "../assets/foodDelivery.png";
+import menuScreen from "../assets/menuScreen.png";
+import onBoarding from "../assets/onboardingScreen.png";
+import futureIsAlreadyWatching from "../assets/The Future is already watching - Cover Page.jpeg";
+import powerOfRelationship from "../assets/The Power of Relationship - Cover Page.jpeg";
 
 export const projects = [
   {
@@ -20,8 +25,43 @@ export const projects = [
     link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
   },
   {
-    title: "Restaurant End-User App",
+    title: "Restaurant End-User App Main Screen",
     img: app,
+    short: "Food ordering mobile app design.",
+    full: "Restaurant End-User App UI/UX Design focuses on easy menu browsing, quick ordering, and secure payments with a modern mobile interface.",
+    link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+  },
+  {
+    title: "Restaurant End-User App Tracking Screen",
+    img: foodDelivery,
+    short: "Food ordering mobile app design.",
+    full: "Restaurant End-User App UI/UX Design focuses on easy menu browsing, quick ordering, and secure payments with a modern mobile interface.",
+    link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+  },
+  {
+    title: "Menu Screen",
+    img: menuScreen,
+    short: "Food ordering mobile app design.",
+    full: "Restaurant End-User App UI/UX Design focuses on easy menu browsing, quick ordering, and secure payments with a modern mobile interface.",
+    link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+  },
+  {
+    title: "onboarding Screen",
+    img: onBoarding,
+    short: "Food ordering mobile app design.",
+    full: "Restaurant End-User App UI/UX Design focuses on easy menu browsing, quick ordering, and secure payments with a modern mobile interface.",
+    link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+  },
+  {
+    title: "Book Cover - The Power of Relationship",
+    img: powerOfRelationship,
+    short: "Food ordering mobile app design.",
+    full: "Restaurant End-User App UI/UX Design focuses on easy menu browsing, quick ordering, and secure payments with a modern mobile interface.",
+    link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+  },
+  {
+    title: "Book Cover - The Future is already watching",
+    img: futureIsAlreadyWatching,
     short: "Food ordering mobile app design.",
     full: "Restaurant End-User App UI/UX Design focuses on easy menu browsing, quick ordering, and secure payments with a modern mobile interface.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
