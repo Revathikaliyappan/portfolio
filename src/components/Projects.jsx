@@ -6,8 +6,8 @@ import app from "../assets/Home.png";
 import foodDelivery from "../assets/foodDelivery.png";
 import menuScreen from "../assets/menuScreen.png";
 import onBoarding from "../assets/onboardingScreen.png";
-import futureIsAlreadyWatching from "../assets/The Future is already watching - Cover Page.jpeg";
-import powerOfRelationship from "../assets/The Power of Relationship - Cover Page.jpeg";
+import futureIsAlreadyWatching from "../assets/The Future is already watching - Cover Page.png";
+import powerOfRelationship from "../assets/The Power of Relationship - Cover Page.png";
 
 export const projects = [
   {
