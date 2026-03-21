@@ -88,7 +88,7 @@ function Projects() {
                 {openIndex === index ? project.full : project.short}
               </p>
 
-              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mt-auto">
+              {/* <div className="flex flex-col sm:flex-row sm:items-center gap-3 mt-auto">
                 <button
                   onClick={() => toggleProject(index)}
                   className="text-blue-600 font-medium hover:underline"
@@ -104,7 +104,7 @@ function Projects() {
                 >
                   Live Project →
                 </a>
-              </div>
+              </div> */}
 
             </div>
           ))}
