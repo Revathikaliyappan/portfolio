@@ -13,12 +13,12 @@ import easter from "../assets/easteregg.jpeg";
 
 export const projects = [
   {
-    title: "Sci Fi",
+    title: "Sci Fi Carousel",
     img: scifi,
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
   },
   {
-    title: "Easter Hunt",
+    title: "Easter Hunt Carousel",
     img: easter,
     link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
   },
