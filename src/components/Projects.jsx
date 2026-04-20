@@ -8,8 +8,20 @@ import menuScreen from "../assets/menuScreen.png";
 import onBoarding from "../assets/onboardingScreen.png";
 import futureIsAlreadyWatching from "../assets/The Future is already watching - Cover Page.png";
 import powerOfRelationship from "../assets/The Power of Relationship - Cover Page.png";
+import scifi from "../assets/scifi.jpeg";
+import easter from "../assets/easteregg.jpeg";
 
 export const projects = [
+  {
+    title: "Sci Fi",
+    img: scifi,
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+  },
+  {
+    title: "Restaurant POS",
+    img: easter,
+    link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
+  },
   {
     title: "Salon POS",
     img: salon,
