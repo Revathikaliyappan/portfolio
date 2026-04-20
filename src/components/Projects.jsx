@@ -18,7 +18,7 @@ export const projects = [
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
   },
   {
-    title: "Restaurant POS",
+    title: "Easter Hunt",
     img: easter,
     link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
   },
