@@ -14,113 +14,121 @@ import easter from "../assets/easteregg.jpeg";
 export const projects = [
   {
     title: "Sci Fi Carousel",
+    category: "Graphic Design",
     img: scifi,
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
   },
   {
     title: "Easter Hunt Carousel",
+    category: "Graphic Design",
     img: easter,
     link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
   },
   {
     title: "Salon POS",
+    category: "UI Design",
     img: salon,
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
   },
   {
     title: "Restaurant POS",
+    category: "UI Design",
     img: restaurant,
     link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
   },
   {
-    title: "Restaurant End-User App Main Screen",
+    title: "Food App Main",
+    category: "Mobile UI",
     img: app,
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
   },
   {
-    title: "Restaurant End-User App Tracking Screen",
+    title: "Tracking Screen",
+    category: "Mobile UI",
     img: foodDelivery,
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
   },
   {
-    title: "Menu Screen",
+    title: "Menu Interface",
+    category: "UI Design",
     img: menuScreen,
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
   },
   {
-    title: "onboarding Screen",
+    title: "App Onboarding",
+    category: "Mobile UI",
     img: onBoarding,
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
   },
   {
-    title: "Book Cover - The Power of Relationship",
+    title: "Power of Relationship",
+    category: "Book Cover",
     img: powerOfRelationship,
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
   },
   {
-    title: "Book Cover - The Future is already watching",
+    title: "The Future",
+    category: "Book Cover",
     img: futureIsAlreadyWatching,
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
   },
 ];
 
 function Projects() {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleProject = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section id="projects" className="py-20 bg-white px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-24 bg-bg-secondary px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="animate-reveal">
+            <span className="text-accent-primary font-semibold tracking-wider uppercase text-sm mb-4 block">
+              Portfolio
+            </span>
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+              Selected <span className="text-gradient">Works</span>
+            </h2>
+          </div>
+          <p className="text-text-secondary text-lg max-w-md md:text-right">
+            A collection of projects where I've combined aesthetic appeal with functional design.
+          </p>
+        </div>
 
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-          My Works
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <div
+            <a
               key={index}
-              className="shadow-lg rounded-xl overflow-hidden p-5 flex flex-col"
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="group relative block overflow-hidden rounded-3xl aspect-[16/10]"
             >
               <img
                 src={project.img}
                 alt={project.title}
-                className="rounded-lg mb-4 w-full h-auto object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-
-              <h3 className="text-xl sm:text-2xl font-semibold mb-2">
-                {project.title}
-              </h3>
-
-              <p className="text-gray-600 mb-4">
-                {openIndex === index ? project.full : project.short}
-              </p>
-
-              {/* <div className="flex flex-col sm:flex-row sm:items-center gap-3 mt-auto">
-                <button
-                  onClick={() => toggleProject(index)}
-                  className="text-blue-600 font-medium hover:underline"
-                >
-                  {openIndex === index ? "Show Less" : "More"}
-                </button>
-
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  Live Project →
-                </a>
-              </div> */}
-
-            </div>
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                <span className="text-accent-primary text-sm font-semibold tracking-widest uppercase mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                  {project.category}
+                </span>
+                <h3 className="text-3xl font-bold text-white mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+                  {project.title}
+                </h3>
+                <div className="flex items-center text-white/70 text-sm font-medium translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-150">
+                  View Case Study 
+                  <svg className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              </div>
+              
+              {/* Initial Badge */}
+              <div className="absolute top-6 right-6 glass px-4 py-1.5 rounded-full text-xs font-bold text-white tracking-widest uppercase group-hover:opacity-0 transition-opacity">
+                {project.category}
+              </div>
+            </a>
           ))}
-
         </div>
       </div>
     </section>
@@ -128,3 +136,4 @@ function Projects() {
 }
 
 export default Projects;
+
