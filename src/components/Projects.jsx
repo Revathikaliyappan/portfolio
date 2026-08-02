@@ -18,17 +18,170 @@ import brochure from "../assets/broucher.jpeg";
 import tshirt from "../assets/tshirt.jpeg";
 import product1 from "../assets/product-1.jpeg";
 import product2 from "../assets/product-2.jpeg";
+import adventureStandy from "../assets/adventure-standy.jpg";
+import Customer from "../assets/Customer.png";
+import Setting from "../assets/Setting.png";
+import Chat from "../assets/Chat.png";
+import Menu from "../assets/Menu.png";
+import foodDeliveryHome from "../assets/foodDeliveryHome.png";
+import foodDeliveryConfirmation from "../assets/foodDeliveryOrderConfirm.png";
+import foodDeliveryStatus from "../assets/foodDeliveryOrderStatus.png";
+import churchBanner from "../assets/church-banner.jpg";
+
+// Import poster and advertisement mockup assets
+import groundnutRealTaste from "../assets/sales the groundnut oil.jpg";
+import gingellyOil from "../assets/oil.jpg";
+import coconutOil from "../assets/coconut oil.jpg";
+import groundnutFarm from "../assets/groundnut oil poster 2.jpg";
+import productCollection from "../assets/cooking oil.jpg";
+import iceCreamPoster from "../assets/icrcream promotion.jpg";
+import mattressAd from "../assets/promoting beds.jpg";
+import gamingHeadphones from "../assets/headphone sales.jpg";
+import aachiChilli from "../assets/red chill powder.jpg";
 
 export const projects = [
+  {
+    title: "Cold Pressed Groundnut Oil (Real Taste)",
+    category: "Graphic Design",
+    img: groundnutRealTaste,
+    images: [groundnutRealTaste],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Real Taste with Real Nutrition in Every Drop. Subheading: Experience the richness of traditionally cold-pressed groundnut oil, packed with natural goodness for healthier cooking. Features: 100% Natural | Cold Pressed | No Artificial Chemicals | Rich in Vitamin E | Heart Healthy. CTA: Cook Healthy. Live Better.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Gingelly Oil Promotion",
+    category: "Graphic Design",
+    img: gingellyOil,
+    images: [gingellyOil],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Cook Healthy Recipes with Premium Gingelly Oil. Subheading: Bring authentic flavor and nutrition to every meal with naturally extracted sesame oil. Features: Traditional Wood Pressed | Rich Aroma | High Nutritional Value | Perfect for Everyday Cooking. CTA: Healthy Food Begins with Healthy Oil.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Coconut Oil",
+    category: "Graphic Design",
+    img: coconutOil,
+    images: [coconutOil],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Made from the Finest Quality Coconuts. Subheading: Pure coconut oil crafted using traditional methods to preserve its natural nutrients and freshness. Features: Cold Pressed | No Preservatives | Natural Aroma | Suitable for Cooking & Wellness. CTA: Nature's Goodness in Every Drop.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Groundnut Oil (Farm Background)",
+    category: "Graphic Design",
+    img: groundnutFarm,
+    images: [groundnutFarm],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Pure Goodness. Richer Taste. Features: Wood Pressed | 100% Pure | No Chemicals | Rich in Vitamin E | Heart Friendly | Naturally Nutritious. CTA: Healthy Family Starts with Healthy Cooking.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Product Collection Poster",
+    category: "Graphic Design",
+    img: productCollection,
+    images: [productCollection],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: The Health You Need. The Taste You Love. Subheading: Choose from our premium collection of naturally extracted cooking oils for every kitchen. Products: Groundnut Oil | Gingelly Oil | Coconut Oil. CTA: Healthy Choices Begin Here.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Ice Cream Poster",
+    category: "Graphic Design",
+    img: iceCreamPoster,
+    images: [iceCreamPoster],
+    role: "Graphic Designer",
+    tools: ["Photoshop"],
+    description: "Headline: Summer Special Ice Cream. Offer: Limited Time Offer. Highlights: Real Fruit Flavours | Premium Ingredients | Free Home Delivery | Freshly Made Daily. Price: Only ₹150. CTA: Order Now & Beat the Heat!",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Mattress Advertisement",
+    category: "Print & Branding",
+    img: mattressAd,
+    images: [mattressAd],
+    role: "Graphic Designer",
+    tools: ["Photoshop"],
+    description: "Headline: Wake Up Fresh Every Morning. Subheading: Sleep better with premium comfort designed for healthier living. Features: 10-Year Warranty | Anti-Dust Technology | Allergy Free | Ultra Comfort Foam | Breathable Fabric. CTA: Book Your Perfect Sleep Today.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Gaming Headphones",
+    category: "Graphic Design",
+    img: gamingHeadphones,
+    images: [gamingHeadphones],
+    role: "Graphic Designer",
+    tools: ["Photoshop"],
+    description: "Headline: Professional Gaming Headphones. Features: 80 Hours Battery | Bluetooth Connectivity | Low Latency | Crystal Clear Audio | Comfortable Ear Cushions | Noise Cancellation. Offer: 30% OFF. CTA: Upgrade Your Gaming Experience.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Aachi Chilli Powder",
+    category: "Print & Branding",
+    img: aachiChilli,
+    images: [aachiChilli],
+    role: "Graphic Designer",
+    tools: ["Photoshop"],
+    description: "Headline: Real Flavour for Every Dish. Subheading: Made from carefully selected premium red chillies to bring authentic taste to every recipe. Features: Rich Colour | Strong Aroma | Premium Quality | Hygienically Packed. CTA: Add the Perfect Spice to Every Meal.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
+  },
+  {
+    title: "Blessing & Prayer Ceremony Banner",
+    category: "Graphic Design",
+    img: churchBanner,
+    images: [churchBanner],
+    role: "Visual Designer",
+    tools: ["Photoshop"],
+    description: "Title: Blessing & Prayer Ceremony. Description: A day filled with faith, gratitude, prayer, and community gathering. May God's blessings bring peace, hope, and joy to every family. Quote: 'Faith brings hope, prayer brings strength, and love brings us together.' Footer: Thank you to everyone who participated and made this celebration memorable.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "banner",
+  },
+  {
+    title: "A River Adventure - Standy Design",
+    category: "Print & Branding",
+    img: adventureStandy,
+    images: [adventureStandy],
+    role: "Visual Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "A large-scale outdoor marketing standy and promotional poster designed for an adventure park. Features highly dynamic thematic layouts, high-fidelity vector assets, and print-ready formatting.",
+    link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+    isPortrait: true,
+    mockupType: "standy",
+  },
   {
     title: "GourmetGo - Food Delivery App",
     category: "Mobile UI",
     img: app,
-    images: [app, menuScreen, onBoarding, foodDelivery],
+    images: [app, menuScreen, onBoarding, foodDeliveryHome, foodDeliveryConfirmation, foodDeliveryStatus],
     role: "Lead UI/UX Designer",
     tools: ["Figma", "Illustrator"],
     description: "An elegant, user-centric mobile application designed to streamline the food ordering and delivery experience. Focuses on mouth-watering visual presentations, highly intuitive navigation, smooth menu interactions, and real-time order tracking.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+    mockupType: "mobile",
   },
   {
     title: "Salon POS & Scheduler",
@@ -39,16 +192,18 @@ export const projects = [
     tools: ["Figma", "Photoshop"],
     description: "A comprehensive point-of-sale and appointment management platform tailored for high-end beauty salons. Optimizes service scheduling, stylist allocations, inventory management, and provides intuitive analytics dashboards.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    mockupType: "desktop",
   },
   {
     title: "Restaurant POS System",
     category: "Web & POS",
     img: restaurant,
-    images: [restaurant],
+    images: [restaurant, Menu, Customer, Setting, Chat],
     role: "UI/UX Designer",
     tools: ["Figma"],
     description: "A robust, high-performance touch screen POS system built for fast-paced restaurant environments. Designed with quick-action layouts, table grid mapping, payment integrations, and clear receipt previews.",
     link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
+    mockupType: "desktop",
   },
   {
     title: "Eco-Friendly Product Branding",
@@ -59,6 +214,8 @@ export const projects = [
     tools: ["Photoshop", "Canva"],
     description: "A complete packaging and visual identity system created for a premium organic product line. Uses natural earth tones, minimalistic layouts, and high-fidelity mockups to communicate sustainability and elegance.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+    isPortrait: true,
+    mockupType: "poster",
   },
   {
     title: "Sci-Fi Instagram Carousel",
@@ -69,6 +226,8 @@ export const projects = [
     tools: ["Photoshop", "Canva"],
     description: "A visually striking multi-slide social media campaign based around cyberpunk and futuristic sci-fi aesthetics. Highlighting glowing typography, neon color palettes, and seamless slide transitions to maximize engagement.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "album",
   },
   {
     title: "Easter Hunt Campaign",
@@ -79,6 +238,8 @@ export const projects = [
     tools: ["Illustrator", "Photoshop"],
     description: "A bright, playful, and engaging social media carousel campaign for Easter events. Uses tailored pastel branding, high-quality illustrations, custom iconography, and interactive puzzle elements.",
     link: "https://www.behance.net/gallery/220127795/Restaurant-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "album",
   },
   {
     title: "Apparel Merchandise Design",
@@ -89,6 +250,8 @@ export const projects = [
     tools: ["Photoshop"],
     description: "Modern typographic and illustrative apparel designs presented in high-fidelity realistic t-shirt mockups. Designed for maximum streetwear aesthetic and clean silk-screen production layout.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+    isPortrait: true,
+    mockupType: "poster",
   },
   {
     title: "Corporate Trifold Brochure",
@@ -99,6 +262,8 @@ export const projects = [
     tools: ["Illustrator", "Canva"],
     description: "A modern trifold corporate brochure designed with clean grid geometry, premium typography, and spacious layouts. Balanced for informative content delivery with strong visual hierarchies.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+    isPortrait: true,
+    mockupType: "pamphlet",
   },
   {
     title: "Creative Event Poster",
@@ -109,6 +274,8 @@ export const projects = [
     tools: ["Photoshop", "Illustrator"],
     description: "A visually complex poster combining illustrative textures, bold retro-modern typography, and conceptual color schemes. Crafted to stand out in physical print spaces and high-traffic digital feeds.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster",
   },
   {
     title: "The Future is Already Watching",
@@ -119,6 +286,8 @@ export const projects = [
     tools: ["Photoshop"],
     description: "A mysterious and atmospheric sci-fi book cover design featuring dramatic cinematic lighting, deep shadow details, and futuristic title typographic composition.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+    isPortrait: true,
+    mockupType: "album",
   },
   {
     title: "The Power of Relationship",
@@ -129,6 +298,8 @@ export const projects = [
     tools: ["Illustrator"],
     description: "A warm, minimalist, and highly conceptual book cover design. Employs stylized abstract line art and sophisticated editorial layout to evoke connection and emotional resonance.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
+    isPortrait: true,
+    mockupType: "album",
   }
 ];
 
@@ -158,25 +329,24 @@ function Projects() {
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
               Selected <span className="text-gradient">Works</span>
             </h2>
-            
+
             {/* Filter Category Tabs */}
             <div className="flex flex-wrap gap-2 md:gap-3">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`relative px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide transition-all duration-300 active:scale-95 cursor-pointer ${
-                    activeCategory === cat
-                      ? "bg-white text-black shadow-lg shadow-white/5 font-bold"
-                      : "glass text-text-secondary hover:text-white hover:bg-white/5"
-                  }`}
+                  className={`relative px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide transition-all duration-300 active:scale-95 cursor-pointer ${activeCategory === cat
+                    ? "bg-white text-black shadow-lg shadow-white/5 font-bold"
+                    : "glass text-text-secondary hover:text-white hover:bg-white/5"
+                    }`}
                 >
                   {cat}
                 </button>
               ))}
             </div>
           </div>
-          
+
           <p className="text-text-secondary text-base md:text-lg max-w-md md:text-right leading-relaxed">
             A curated showcase of design solutions, translating complex concepts into clean, high-fidelity visual assets and immersive interfaces.
           </p>
@@ -190,23 +360,66 @@ function Projects() {
               onClick={() => setSelectedProject(project)}
               className="group relative block overflow-hidden rounded-3xl aspect-[16/10] cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-white/10 hover:shadow-accent-primary/5"
             >
-              <img
-                src={project.img}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-              
+              <div className="w-full h-full relative flex items-center justify-center p-4 bg-slate-950/90 overflow-hidden">
+                {/* Soft blurred background backdrop */}
+                <img
+                  src={project.img}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover blur-xl opacity-30 pointer-events-none scale-110"
+                />
+
+                {/* Conditional Mockup Rendering based on project type */}
+                {project.mockupType === "mobile" ? (
+                  /* Smartphone screen mockup */
+                  <div className="w-[125px] h-[240px] sm:w-[155px] sm:h-[300px] md:w-[170px] md:h-[320px] relative border-[5px] border-slate-800 bg-black rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
+                    {/* Notch */}
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-3.5 bg-slate-800 rounded-b-xl z-20 flex items-center justify-center">
+                      <div className="w-6 h-1 bg-slate-900 rounded-full mb-0.5" />
+                    </div>
+                    {/* Viewport content */}
+                    <div className="w-full h-full rounded-[26px] overflow-hidden relative bg-black">
+                      <img src={project.img} className="w-full h-full object-cover object-top" loading="lazy" />
+                      {/* Home bar */}
+                      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-16 h-1 bg-white/60 rounded-full z-20" />
+                    </div>
+                  </div>
+                ) : project.mockupType === "desktop" ? (
+                  /* Desktop web browser mockup */
+                  <div className="w-[85%] max-w-[450px] aspect-[16/10] bg-slate-900 rounded-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col transition-transform duration-700 group-hover:scale-[1.02]">
+                    {/* Browser Toolbar header */}
+                    <div className="h-6 bg-slate-950 px-3 flex items-center gap-1.5 border-b border-white/5 select-none shrink-0">
+                      <div className="w-2 h-2 rounded-full bg-[#ff5f56]" />
+                      <div className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
+                      <div className="w-2 h-2 rounded-full bg-[#27c93f]" />
+                    </div>
+                    {/* Viewport content */}
+                    <div className="flex-1 w-full bg-slate-950 overflow-hidden relative">
+                      <img src={project.img} className="w-full h-full object-cover object-top" loading="lazy" />
+                    </div>
+                  </div>
+                ) : (
+                  /* Poster/Banner/Print design mockup */
+                  <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-slate-900/60 p-1.5 max-w-[85%] max-h-[85%] flex items-center justify-center transition-transform duration-700 group-hover:scale-[1.02]">
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className="w-auto h-auto max-w-full max-h-[180px] sm:max-h-[240px] md:max-h-[280px] object-contain rounded-xl shadow-inner"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+              </div>
+
               {/* Overlay on Hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 md:p-8">
                 <span className="text-accent-primary text-xs font-semibold tracking-widest uppercase mb-2 translate-y-3 group-hover:translate-y-0 transition-transform duration-500 delay-75">
                   {project.category}
                 </span>
-                
+
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 translate-y-3 group-hover:translate-y-0 transition-transform duration-500 delay-100">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-text-secondary text-sm line-clamp-2 mb-4 translate-y-3 group-hover:translate-y-0 transition-transform duration-500 delay-150">
                   {project.description}
                 </p>
@@ -218,7 +431,7 @@ function Projects() {
                   </svg>
                 </div>
               </div>
-              
+
               {/* Standard Initial Badge */}
               <div className="absolute top-5 right-5 glass px-4 py-1.5 rounded-full text-[10px] font-bold text-white tracking-widest uppercase group-hover:opacity-0 transition-opacity duration-300 pointer-events-none">
                 {project.category}
@@ -333,9 +546,8 @@ function ProjectModal({ project, onClose }) {
                   <button
                     key={idx}
                     onClick={() => setActiveImageIndex(idx)}
-                    className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                      activeImageIndex === idx ? "w-6 bg-accent-primary" : "w-2.5 bg-white/20 hover:bg-white/40"
-                    }`}
+                    className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${activeImageIndex === idx ? "w-6 bg-accent-primary" : "w-2.5 bg-white/20 hover:bg-white/40"
+                      }`}
                   />
                 ))}
               </div>
@@ -366,7 +578,7 @@ function ProjectModal({ project, onClose }) {
                   <p className="text-sm font-semibold text-white">{project.role}</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <div className="p-2.5 rounded-xl bg-white/5 text-accent-secondary">
                   <FaTools size={16} />
@@ -413,7 +625,7 @@ function ProjectModal({ project, onClose }) {
               <span>View Behance Case Study</span>
               <FaExternalLinkAlt size={12} className="ml-1" />
             </a>
-            
+
             <button
               onClick={onClose}
               className="px-6 py-4 glass text-text-primary font-semibold rounded-2xl hover:bg-white/5 active:scale-95 transition-all duration-300 text-sm cursor-pointer"

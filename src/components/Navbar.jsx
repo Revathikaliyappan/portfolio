@@ -55,9 +55,8 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute w-[calc(100%-2rem)] left-4 mt-2 transition-all duration-300 ${
-          navOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
+        className={`md:hidden absolute w-[calc(100%-2rem)] left-4 mt-2 transition-all duration-300 ${navOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+          }`}
       >
         <ul className="glass rounded-2xl flex flex-col items-center gap-6 py-8 shadow-2xl">
           {links.map((link) => (
