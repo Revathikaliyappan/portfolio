@@ -50,7 +50,7 @@ export const projects = [
     description: "Headline: Real Taste with Real Nutrition in Every Drop. Subheading: Experience the richness of traditionally cold-pressed groundnut oil, packed with natural goodness for healthier cooking. Features: 100% Natural | Cold Pressed | No Artificial Chemicals | Rich in Vitamin E | Heart Healthy. CTA: Cook Healthy. Live Better.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-frame-wood",
   },
   {
     title: "Gingelly Oil Promotion",
@@ -62,7 +62,7 @@ export const projects = [
     description: "Headline: Cook Healthy Recipes with Premium Gingelly Oil. Subheading: Bring authentic flavor and nutrition to every meal with naturally extracted sesame oil. Features: Traditional Wood Pressed | Rich Aroma | High Nutritional Value | Perfect for Everyday Cooking. CTA: Healthy Food Begins with Healthy Oil.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-hanging",
   },
   {
     title: "Coconut Oil",
@@ -74,7 +74,7 @@ export const projects = [
     description: "Headline: Made from the Finest Quality Coconuts. Subheading: Pure coconut oil crafted using traditional methods to preserve its natural nutrients and freshness. Features: Cold Pressed | No Preservatives | Natural Aroma | Suitable for Cooking & Wellness. CTA: Nature's Goodness in Every Drop.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-frame-silver",
   },
   {
     title: "Groundnut Oil (Farm Background)",
@@ -86,7 +86,7 @@ export const projects = [
     description: "Headline: Pure Goodness. Richer Taste. Features: Wood Pressed | 100% Pure | No Chemicals | Rich in Vitamin E | Heart Friendly | Naturally Nutritious. CTA: Healthy Family Starts with Healthy Cooking.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-hanging",
   },
   {
     title: "Product Collection Poster",
@@ -98,7 +98,7 @@ export const projects = [
     description: "Headline: The Health You Need. The Taste You Love. Subheading: Choose from our premium collection of naturally extracted cooking oils for every kitchen. Products: Groundnut Oil | Gingelly Oil | Coconut Oil. CTA: Healthy Choices Begin Here.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-billboard",
   },
   {
     title: "Ice Cream Poster",
@@ -110,7 +110,7 @@ export const projects = [
     description: "Headline: Summer Special Ice Cream. Offer: Limited Time Offer. Highlights: Real Fruit Flavours | Premium Ingredients | Free Home Delivery | Freshly Made Daily. Price: Only ₹150. CTA: Order Now & Beat the Heat!",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-frame-wood",
   },
   {
     title: "Mattress Advertisement",
@@ -122,7 +122,7 @@ export const projects = [
     description: "Headline: Wake Up Fresh Every Morning. Subheading: Sleep better with premium comfort designed for healthier living. Features: 10-Year Warranty | Anti-Dust Technology | Allergy Free | Ultra Comfort Foam | Breathable Fabric. CTA: Book Your Perfect Sleep Today.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-billboard",
   },
   {
     title: "Gaming Headphones",
@@ -134,7 +134,7 @@ export const projects = [
     description: "Headline: Professional Gaming Headphones. Features: 80 Hours Battery | Bluetooth Connectivity | Low Latency | Crystal Clear Audio | Comfortable Ear Cushions | Noise Cancellation. Offer: 30% OFF. CTA: Upgrade Your Gaming Experience.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "poster-frame-silver",
   },
   {
     title: "Aachi Chilli Powder",
@@ -146,7 +146,7 @@ export const projects = [
     description: "Headline: Real Flavour for Every Dish. Subheading: Made from carefully selected premium red chillies to bring authentic taste to every recipe. Features: Rich Colour | Strong Aroma | Premium Quality | Hygienically Packed. CTA: Add the Perfect Spice to Every Meal.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "packaging",
   },
   {
     title: "Blessing & Prayer Ceremony Banner",
@@ -275,7 +275,7 @@ export const projects = [
     description: "A visually complex poster combining illustrative textures, bold retro-modern typography, and conceptual color schemes. Crafted to stand out in physical print spaces and high-traffic digital feeds.",
     link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "desktop",
   },
   {
     title: "The Future is Already Watching",
@@ -287,7 +287,7 @@ export const projects = [
     description: "A mysterious and atmospheric sci-fi book cover design featuring dramatic cinematic lighting, deep shadow details, and futuristic title typographic composition.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
     isPortrait: true,
-    mockupType: "album",
+    mockupType: "poster",
   },
   {
     title: "The Power of Relationship",
@@ -299,7 +299,7 @@ export const projects = [
     description: "A warm, minimalist, and highly conceptual book cover design. Employs stylized abstract line art and sophisticated editorial layout to evoke connection and emotional resonance.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
     isPortrait: true,
-    mockupType: "album",
+    mockupType: "poster",
   }
 ];
 
@@ -358,7 +358,7 @@ function Projects() {
             <div
               key={project.title}
               onClick={() => setSelectedProject(project)}
-              className="group relative block overflow-hidden rounded-3xl aspect-[16/10] cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-white/10 hover:shadow-accent-primary/5"
+              className="group relative block overflow-hidden rounded-3xl aspect-[4/3] sm:aspect-[16/10] cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-white/10 hover:shadow-accent-primary/5"
             >
               <div className="w-full h-full relative flex items-center justify-center p-4 bg-slate-950/90 overflow-hidden">
                 {/* Soft blurred background backdrop */}
@@ -367,46 +367,156 @@ function Projects() {
                   alt=""
                   className="absolute inset-0 w-full h-full object-cover blur-xl opacity-30 pointer-events-none scale-110"
                 />
-
-                {/* Conditional Mockup Rendering based on project type */}
-                {project.mockupType === "mobile" ? (
-                  /* Smartphone screen mockup */
-                  <div className="w-[125px] h-[240px] sm:w-[155px] sm:h-[300px] md:w-[170px] md:h-[320px] relative border-[5px] border-slate-800 bg-black rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
-                    {/* Notch */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-3.5 bg-slate-800 rounded-b-xl z-20 flex items-center justify-center">
-                      <div className="w-6 h-1 bg-slate-900 rounded-full mb-0.5" />
+                {/* Apply poster mockup frames for first 8 images only */}
+                {projects.findIndex(p => p.title === project.title) < 8 ? (
+                  /* Render diversified mockups for first 8 projects */
+                  project.mockupType === "poster-frame-wood" ? (
+                    /* 3D Wooden Framed Poster Mockup */
+                    <div className="relative h-[85%] max-h-[250px] aspect-[1/1.4] bg-[#22160d] border-[6px] border-[#3e2723] rounded-lg shadow-[0_20px_45px_rgba(0,0,0,0.8),inset_0_2px_4px_rgba(255,255,255,0.05)] overflow-hidden transition-all duration-700 group-hover:scale-[1.02] flex items-center justify-center p-2">
+                      <div className="absolute inset-0 border border-black/60 z-10 pointer-events-none" />
+                      <div className="w-full h-full bg-slate-950 overflow-hidden relative shadow-inner">
+                        <img src={project.img} className="w-full h-full object-contain object-center" loading="lazy" alt={project.title} />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none z-20" />
+                      </div>
                     </div>
-                    {/* Viewport content */}
-                    <div className="w-full h-full rounded-[26px] overflow-hidden relative bg-black">
-                      <img src={project.img} className="w-full h-full object-cover object-top" loading="lazy" />
-                      {/* Home bar */}
-                      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-16 h-1 bg-white/60 rounded-full z-20" />
+                  ) : project.mockupType === "poster-frame-silver" ? (
+                    /* 3D Metallic Framed Poster Mockup */
+                    <div className="relative h-[85%] max-h-[250px] aspect-[1/1.4] bg-[#9e9e9e] border-[5px] border-[#e0e0e0] rounded-lg shadow-[0_20px_45px_rgba(0,0,0,0.8),inset_0_1px_3px_rgba(255,255,255,0.5)] overflow-hidden transition-all duration-700 group-hover:scale-[1.02] flex items-center justify-center p-1.5">
+                      <div className="absolute inset-0 border border-black/40 z-10 pointer-events-none" />
+                      <div className="w-full h-full bg-slate-950 overflow-hidden relative shadow-inner">
+                        <img src={project.img} className="w-full h-full object-contain object-center" loading="lazy" alt={project.title} />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none z-20" />
+                      </div>
                     </div>
-                  </div>
-                ) : project.mockupType === "desktop" ? (
-                  /* Desktop web browser mockup */
-                  <div className="w-[85%] max-w-[450px] aspect-[16/10] bg-slate-900 rounded-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col transition-transform duration-700 group-hover:scale-[1.02]">
-                    {/* Browser Toolbar header */}
-                    <div className="h-6 bg-slate-950 px-3 flex items-center gap-1.5 border-b border-white/5 select-none shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-[#ff5f56]" />
-                      <div className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
-                      <div className="w-2 h-2 rounded-full bg-[#27c93f]" />
+                  ) : project.mockupType === "poster-hanging" ? (
+                    /* Hanging Bulldog Clip Paper Poster Mockup */
+                    <div className="relative h-[85%] max-h-[250px] aspect-[1/1.4] flex flex-col items-center justify-center select-none group-hover:scale-[1.03] transition-all duration-700 pt-4">
+                      {/* Metal bulldog clip */}
+                      <div className="absolute top-0 w-8 h-3.5 bg-gradient-to-b from-neutral-400 to-neutral-600 rounded-t-sm shadow-md border-b border-black/30 flex items-center justify-center z-20">
+                        <div className="w-4 h-1.5 bg-neutral-800 rounded-sm" />
+                      </div>
+                      {/* Hanging String */}
+                      <div className="absolute top-[-8px] w-[1px] h-3 bg-neutral-500 z-10" />
+                      {/* Paper Poster */}
+                      <div className="flex-1 w-full bg-[#faf9f6] text-black shadow-[0_15px_35px_rgba(0,0,0,0.6)] relative overflow-hidden p-1">
+                        <img src={project.img} className="w-full h-full object-contain object-center rounded-sm" loading="lazy" alt={project.title} />
+                        {/* Paper curling shadow and curve highlights */}
+                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/15 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute inset-y-0 right-0 w-3 bg-gradient-to-l from-black/15 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute inset-x-0 bottom-0 h-4 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
+                      </div>
                     </div>
-                    {/* Viewport content */}
-                    <div className="flex-1 w-full bg-slate-950 overflow-hidden relative">
-                      <img src={project.img} className="w-full h-full object-cover object-top" loading="lazy" />
+                  ) : (
+                    /* Glow Billboard Lightbox Mockup (poster-billboard) */
+                    <div className="relative h-[80%] max-h-[240px] aspect-[1.5] bg-neutral-900 border-[8px] border-neutral-900 rounded-lg shadow-[0_20px_45px_rgba(0,0,0,0.8)] overflow-hidden transition-all duration-700 group-hover:scale-[1.02] flex flex-col justify-between">
+                      <div className="flex-1 w-full bg-slate-950 relative shadow-inner overflow-hidden">
+                        <img src={project.img} className="w-full h-full object-contain object-center" loading="lazy" alt={project.title} />
+                        <div className="absolute inset-0 bg-radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_80%) pointer-events-none z-10" />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none z-15" />
+                      </div>
+                      {/* Metal base support plate */}
+                      <div className="h-[5%] w-full bg-gradient-to-b from-neutral-800 to-neutral-900 border-t border-black/50" />
                     </div>
-                  </div>
-                ) : (
-                  /* Poster/Banner/Print design mockup */
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-slate-900/60 p-1.5 max-w-[85%] max-h-[85%] flex items-center justify-center transition-transform duration-700 group-hover:scale-[1.02]">
+                  )
+                ) : projects.findIndex(p => p.title === project.title) >= projects.length - 2 ? (
+                  /* Render the last two projects in normal way (Clean raw image view) */
+                  <div className="relative w-full h-full flex items-center justify-center p-2">
                     <img
                       src={project.img}
                       alt={project.title}
-                      className="w-auto h-auto max-w-full max-h-[180px] sm:max-h-[240px] md:max-h-[280px] object-contain rounded-xl shadow-inner"
+                      className="max-w-full max-h-[85%] object-contain rounded-2xl shadow-xl transition-transform duration-700 group-hover:scale-[1.02]"
                       loading="lazy"
                     />
                   </div>
+                ) : (
+                  project.mockupType === "mobile" ? (
+                    /* Smartphone screen mockup */
+                    <div className="h-[80%] max-h-[280px] md:max-h-[320px] aspect-[9/19] relative border-[4px] md:border-[6px] border-slate-800 bg-black rounded-[24px] md:rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden transition-transform duration-700 group-hover:scale-[1.02]">
+                      {/* Notch */}
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[5%] max-h-[14px] bg-slate-800 rounded-b-xl z-20 flex items-center justify-center">
+                        <div className="w-1/3 h-[20%] bg-slate-900 rounded-full mb-0.5" />
+                      </div>
+                      {/* Viewport content */}
+                      <div className="w-full h-full rounded-[18px] md:rounded-[26px] overflow-hidden relative bg-black">
+                        <img src={project.img} className="w-full h-full object-cover object-top" loading="lazy" alt={project.title} />
+                        {/* Home bar */}
+                        <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-16 h-1 bg-white/60 rounded-full z-20" />
+                      </div>
+                    </div>
+                  ) : project.mockupType === "standy" ? (
+                    /* 3D Roll-Up Standy Mockup */
+                    <div className="relative h-[90%] max-h-[280px] aspect-[1/2.3] flex flex-col items-center justify-between select-none group-hover:scale-[1.03] transition-transform duration-700">
+                      {/* Metallic Top Bar */}
+                      <div className="w-[95%] h-[2.5%] bg-gradient-to-r from-slate-400 via-slate-200 to-slate-500 rounded-t-sm shadow-sm border-b border-black/40 z-10" />
+                      {/* Banner Print Area */}
+                      <div className="flex-1 w-[90%] bg-slate-900 relative shadow-2xl border-x border-white/5 overflow-hidden">
+                        <img src={project.img} className="w-full h-full object-cover object-center" loading="lazy" alt={project.title} />
+                        {/* Banner curve highlights */}
+                        <div className="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/20 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute inset-y-0 right-0 w-2 bg-gradient-to-l from-black/20 via-transparent to-transparent pointer-events-none" />
+                        {/* Outdoor glare overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none" />
+                      </div>
+                      {/* Metallic Roll-up Base */}
+                      <div className="w-full h-[6%] bg-gradient-to-b from-slate-300 via-slate-400 to-slate-600 rounded-sm shadow-md border-t border-white/10 flex flex-col justify-between items-center z-10">
+                        {/* Base shadow crease */}
+                        <div className="h-[20%] w-full bg-black/20" />
+                        <div className="h-[10%] w-3/4 bg-slate-800/80 rounded-t-sm" />
+                      </div>
+                      {/* Standy Feet Support */}
+                      <div className="w-[105%] h-[1.5%] flex justify-between px-2 z-0 -mt-[1px]">
+                        <div className="w-[20%] h-full bg-gradient-to-b from-slate-600 to-slate-800 rounded-b-md shadow-md" />
+                        <div className="w-[20%] h-full bg-gradient-to-b from-slate-600 to-slate-800 rounded-b-md shadow-md" />
+                      </div>
+                    </div>
+                  ) : (project.mockupType === "desktop" || project.mockupType === "pamphlet" || project.mockupType === "banner") ? (
+                    /* Desktop web browser mockup */
+                    <div className="w-[85%] max-w-[450px] aspect-[16/10] bg-slate-900 rounded-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden flex flex-col transition-transform duration-700 group-hover:scale-[1.02]">
+                      {/* Browser Toolbar header */}
+                      <div className="h-6 bg-slate-950 px-3 flex items-center gap-1.5 border-b border-white/5 select-none shrink-0">
+                        <div className="w-2 h-2 rounded-full bg-[#ff5f56]" />
+                        <div className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
+                        <div className="w-2 h-2 rounded-full bg-[#27c93f]" />
+                      </div>
+                      {/* Viewport content */}
+                      <div className="flex-1 w-full bg-slate-950 overflow-hidden relative">
+                        <img src={project.img} className="w-full h-full object-cover object-top" loading="lazy" alt={project.title} />
+                      </div>
+                    </div>
+                  ) : (
+                    /* Instagram Carousel/Post Mockup for album, book, packaging, poster */
+                    <div className="relative h-[80%] max-h-[250px] aspect-square bg-[#050505] rounded-2xl shadow-2xl overflow-hidden border border-white/10 flex flex-col group-hover:scale-[1.02] transition-transform duration-700">
+                      {/* Mock Instagram Header */}
+                      <div className="h-9 px-3 flex items-center justify-between border-b border-white/5 shrink-0 bg-black/20">
+                        <div className="flex items-center gap-2">
+                          <div className="w-5 h-5 rounded-full bg-gradient-to-tr from-accent-primary to-accent-secondary" />
+                          <span className="text-[10px] font-bold text-white/80 tracking-wide">revathi_designs</span>
+                        </div>
+                        <div className="flex gap-[2px]">
+                          <div className="w-1 h-1 rounded-full bg-white/40" />
+                          <div className="w-1 h-1 rounded-full bg-white/40" />
+                          <div className="w-1 h-1 rounded-full bg-white/40" />
+                        </div>
+                      </div>
+                      {/* Viewport/Image container */}
+                      <div className="flex-1 w-full bg-slate-950 overflow-hidden relative flex items-center justify-center">
+                        <img src={project.img} className="w-full h-full object-contain" loading="lazy" alt={project.title} />
+
+                        {/* Carousel Indicator Icon */}
+                        <div className="absolute top-2.5 right-2.5 bg-black/60 p-1.5 rounded-lg border border-white/10 text-white/90 z-10">
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 2H8a2 2 0 00-2 2v1H5a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-1h1a2 2 0 002-2V4a2 2 0 00-2-2zM8 4h11v11H8V4zm11 16H5V7h1V6a2 2 0 012-2h1v11a2 2 0 002 2h7v1z" />
+                          </svg>
+                        </div>
+
+                        {/* Dots Indicator Overlay */}
+                        <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex gap-1 bg-black/50 px-2 py-1 rounded-full z-10">
+                          <div className="w-1.5 h-1.5 rounded-full bg-accent-primary animate-pulse" />
+                          <div className="w-1.5 h-1.5 rounded-full bg-white/30" />
+                        </div>
+                      </div>
+                    </div>
+                  )
                 )}
               </div>
 
@@ -495,7 +605,7 @@ function ProjectModal({ project, onClose }) {
       onClick={onClose}
     >
       <div
-        className="relative bg-bg-secondary border border-white/5 rounded-3xl w-full max-w-6xl overflow-hidden shadow-2xl flex flex-col lg:flex-row max-h-[90vh] md:max-h-[85vh] animate-reveal"
+        className="relative bg-bg-secondary border border-white/5 rounded-3xl w-full max-w-6xl overflow-y-auto lg:overflow-hidden shadow-2xl flex flex-col lg:flex-row max-h-[92vh] lg:max-h-[85vh] animate-reveal"
         onClick={(e) => e.stopPropagation()} // Stop closing on click inside content
       >
         {/* Close Button */}
@@ -556,7 +666,7 @@ function ProjectModal({ project, onClose }) {
         </div>
 
         {/* Right Side: Detailed Project Metadata Panel */}
-        <div className="w-full lg:w-2/5 p-6 md:p-10 flex flex-col justify-between overflow-y-auto max-h-[40vh] lg:max-h-none">
+        <div className="w-full lg:w-2/5 p-6 md:p-10 flex flex-col justify-between lg:overflow-y-auto h-auto lg:h-full max-h-none lg:max-h-none">
           <div className="space-y-6">
             <div>
               <span className="text-accent-primary text-xs font-bold tracking-widest uppercase mb-1 block">
