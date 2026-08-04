@@ -7,13 +7,13 @@ import photoshop from "../assets/photoshop.jpg";
 import illustrator from "../assets/illustrator.png";
 
 const tools = [
-  { name: "HTML", img: html, color: "hover:shadow-orange-500/20" },
-  { name: "CSS", img: css, color: "hover:shadow-blue-500/20" },
-  { name: "WORDPRESS", img: wordpress, color: "hover:shadow-blue-400/20" },
-  { name: "FIGMA", img: figma, color: "hover:shadow-purple-500/20" },
-  { name: "CANVA", img: canva, color: "hover:shadow-cyan-400/20" },
   { name: "PHOTOSHOP", img: photoshop, color: "hover:shadow-blue-600/20" },
   { name: "ILLUSTRATOR", img: illustrator, color: "hover:shadow-orange-600/20" },
+  { name: "FIGMA", img: figma, color: "hover:shadow-purple-500/20" },
+  { name: "CANVA", img: canva, color: "hover:shadow-cyan-400/20" },
+  { name: "WORDPRESS", img: wordpress, color: "hover:shadow-blue-400/20" },
+  { name: "HTML", img: html, color: "hover:shadow-orange-500/20" },
+  { name: "CSS", img: css, color: "hover:shadow-blue-500/20" },
 ];
 
 function Tools() {

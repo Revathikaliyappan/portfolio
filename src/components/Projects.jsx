@@ -27,6 +27,8 @@ import foodDeliveryHome from "../assets/foodDeliveryHome.png";
 import foodDeliveryConfirmation from "../assets/foodDeliveryOrderConfirm.png";
 import foodDeliveryStatus from "../assets/foodDeliveryOrderStatus.png";
 import churchBanner from "../assets/church-banner.jpg";
+import engineSketch from "../assets/engine .jpg";
+import oilCanSketch from "../assets/oil can.jpg";
 
 // Import poster and advertisement mockup assets
 import groundnutRealTaste from "../assets/sales the groundnut oil.jpg";
@@ -287,7 +289,7 @@ export const projects = [
     description: "A mysterious and atmospheric sci-fi book cover design featuring dramatic cinematic lighting, deep shadow details, and futuristic title typographic composition.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "raw",
   },
   {
     title: "The Power of Relationship",
@@ -299,11 +301,35 @@ export const projects = [
     description: "A warm, minimalist, and highly conceptual book cover design. Employs stylized abstract line art and sophisticated editorial layout to evoke connection and emotional resonance.",
     link: "https://www.behance.net/gallery/220116363/Food-Restaurant-End-User-App",
     isPortrait: true,
-    mockupType: "poster",
+    mockupType: "raw",
+  },
+  {
+    title: "Mechanical Engine Sketch",
+    category: "Sketching",
+    img: engineSketch,
+    images: [engineSketch],
+    role: "Artist / Sketcher",
+    tools: ["Pencil", "Sketchbook"],
+    description: "A detailed hand-drawn graphite pencil sketch showcasing the intricate mechanical layout, gears, and structural components of a combustion engine.",
+    link: "https://www.behance.net/",
+    isPortrait: true,
+    mockupType: "raw",
+  },
+  {
+    title: "Oil Can Pencil Sketch",
+    category: "Sketching",
+    img: oilCanSketch,
+    images: [oilCanSketch],
+    role: "Artist / Sketcher",
+    tools: ["Pencil", "Sketchbook"],
+    description: "A realistic hand-drawn graphite pencil sketch of a classic oil can, focusing on shading, metallic reflections, and surface textures.",
+    link: "https://www.behance.net/",
+    isPortrait: true,
+    mockupType: "raw",
   }
 ];
 
-const categories = ["All", "Mobile UI", "Web & POS", "Graphic Design", "Print & Branding"];
+const categories = ["All", "Mobile UI", "Web & POS", "Graphic Design", "Print & Branding", "Sketching"];
 
 function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -418,8 +444,8 @@ function Projects() {
                       <div className="h-[5%] w-full bg-gradient-to-b from-neutral-800 to-neutral-900 border-t border-black/50" />
                     </div>
                   )
-                ) : projects.findIndex(p => p.title === project.title) >= projects.length - 2 ? (
-                  /* Render the last two projects in normal way (Clean raw image view) */
+                ) : (project.mockupType === "raw" || project.category === "Sketching") ? (
+                  /* Render raw sketch images in normal way (Clean raw image view) */
                   <div className="relative w-full h-full flex items-center justify-center p-2">
                     <img
                       src={project.img}

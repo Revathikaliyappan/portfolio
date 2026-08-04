@@ -1,4 +1,4 @@
-import img from '../assets/Banner.jpeg';
+import img from '../assets/professional_designer_workspace.png';
 import resume from '../documents/Graphical Designer - Revathi.pdf';
 
 function About() {
