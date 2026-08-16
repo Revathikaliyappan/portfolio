@@ -30,6 +30,10 @@ import churchBanner from "../assets/church-banner.jpg";
 import engineSketch from "../assets/engine .jpg";
 import oilCanSketch from "../assets/oil can.jpg";
 
+import newImg15 from "../assets/1000134815.jpg";
+import newImg18 from "../assets/1000134818.jpg";
+import newImg21 from "../assets/1000134821.jpg";
+
 // Import poster and advertisement mockup assets
 import groundnutRealTaste from "../assets/sales the groundnut oil.jpg";
 import gingellyOil from "../assets/oil.jpg";
@@ -42,6 +46,42 @@ import gamingHeadphones from "../assets/headphone sales.jpg";
 import aachiChilli from "../assets/red chill powder.jpg";
 
 export const projects = [
+  {
+    title: "Bloom & Bump - Comfort Maternity Pillow Ad",
+    category: "Graphic Design",
+    img: newImg15,
+    images: [newImg15],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Sleep Better. Rest Better. Feel Better. Subheading: Designed to provide gentle support for your growing bump, back, and legs helping you enjoy a more comfortable night's rest. Features: Full body Support | Comfortable For Sleeping | Removable Washable Covers. CTA: Shop Now.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: false,
+    mockupType: "album",
+  },
+  {
+    title: "Bloom & Bump - Journey to Motherhood Poster",
+    category: "Graphic Design",
+    img: newImg18,
+    images: [newImg18],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Motherhood begins long before the baby arrives. Subheading: Every heartbeat, every little kick, every moment of anticipation is part of your beautiful journey to motherhood. Quote: Cherish every moment.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster-frame-wood",
+  },
+  {
+    title: "Bloom & Bump - Pregnancy Guide Infographic",
+    category: "Graphic Design",
+    img: newImg21,
+    images: [newImg21],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Title: 5 Things Every Mom Should Know During Pregnancy. Tips: 1. Eat Well (Choose a balanced nutritious diet) | 2. Stay Hydrated (Drink enough water throughout the day) | 3. Rest Well (Give your body plenty of time rest) | 4. Stay Active (Gentle, doctor-approved activity) | 5. Keep Your Checkups (Regular prenatal care). Footer: Healthy Mom Happy Pregnancy.",
+    link: "https://www.behance.net/gallery/220117481/Saloon-POS-Dashboard",
+    isPortrait: true,
+    mockupType: "poster-hanging",
+  },
   {
     title: "Cold Pressed Groundnut Oil (Real Taste)",
     category: "Graphic Design",
@@ -393,9 +433,8 @@ function Projects() {
                   alt=""
                   className="absolute inset-0 w-full h-full object-cover blur-xl opacity-30 pointer-events-none scale-110"
                 />
-                {/* Apply poster mockup frames for first 8 images only */}
-                {projects.findIndex(p => p.title === project.title) < 8 ? (
-                  /* Render diversified mockups for first 8 projects */
+                {/* Apply poster mockup frames dynamically based on mockupType */}
+                {["poster-frame-wood", "poster-frame-silver", "poster-hanging", "poster-billboard"].includes(project.mockupType) ? (
                   project.mockupType === "poster-frame-wood" ? (
                     /* 3D Wooden Framed Poster Mockup */
                     <div className="relative h-[85%] max-h-[250px] aspect-[1/1.4] bg-[#22160d] border-[6px] border-[#3e2723] rounded-lg shadow-[0_20px_45px_rgba(0,0,0,0.8),inset_0_2px_4px_rgba(255,255,255,0.05)] overflow-hidden transition-all duration-700 group-hover:scale-[1.02] flex items-center justify-center p-2">
