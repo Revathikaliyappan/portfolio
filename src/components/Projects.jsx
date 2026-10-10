@@ -78,7 +78,7 @@ const projects = [
   },
   {
     title: "Butterfly Smile - Vector Illustration",
-    category: "Graphic Design",
+    category: "Sketching",
     img: butterflyIllustration,
     images: [butterflyIllustration],
     role: "Vector Illustrator",
@@ -90,7 +90,7 @@ const projects = [
   },
   {
     title: "Minimalist Cat Silhouette - Vector Art",
-    category: "Graphic Design",
+    category: "Sketching",
     img: catSilhouette,
     images: [catSilhouette],
     role: "Logo & Vector Artist",
