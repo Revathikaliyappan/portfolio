@@ -34,6 +34,12 @@ import newImg15 from "../assets/1000134815.jpg";
 import newImg18 from "../assets/1000134818.jpg";
 import newImg21 from "../assets/1000134821.jpg";
 
+// Import newly added portfolio images
+import auraLaxeAd from "../assets/WhatsApp Image 2026-09-22 at 5.20.01 PM.jpeg";
+import blackFridayAd from "../assets/WhatsApp Image 2026-09-22 at 5.20.16 PM.jpeg";
+import butterflyIllustration from "../assets/Butterfly smile Tracing.jpg.jpeg";
+import catSilhouette from "../assets/Cat.jpg.jpeg";
+
 // Import poster and advertisement mockup assets
 import groundnutRealTaste from "../assets/sales the groundnut oil.jpg";
 import gingellyOil from "../assets/oil.jpg";
@@ -45,7 +51,55 @@ import mattressAd from "../assets/promoting beds.jpg";
 import gamingHeadphones from "../assets/headphone sales.jpg";
 import aachiChilli from "../assets/red chill powder.jpg";
 
-export const projects = [
+const projects = [
+  {
+    title: "Aura Laxe - Sun-Kissed Savings Ad",
+    category: "Graphic Design",
+    img: auraLaxeAd,
+    images: [auraLaxeAd],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Sun-Kissed Savings. Subheading: Dive Into Summer With Our Deals. Promotional tiered offer: Buy 1 Get 15% Off | Buy 2 Get 20% Off | Buy 3 Get 25% Off. CTA: Shop Now. High-end summer promotional ad designed for luxury jewelry and lifestyle accessories, blending elegant typography with a warm, sun-drenched resort aesthetic.",
+    link: "https://www.behance.net/revathikaliyap",
+    isPortrait: true,
+    mockupType: "album",
+  },
+  {
+    title: "Black Friday Sale - Modern Furniture Ad",
+    category: "Graphic Design",
+    img: blackFridayAd,
+    images: [blackFridayAd],
+    role: "Graphic Designer",
+    tools: ["Photoshop", "Illustrator"],
+    description: "Headline: Black Friday Sale Is Live. Offer: Get Upto 75% Off. CTA: Shop Now. A high-impact promotional campaign banner for contemporary designer armchairs and modern home decor, featuring split-color aesthetic, bold golden typography, and compelling e-commerce CTA.",
+    link: "https://www.behance.net/revathikaliyap",
+    isPortrait: true,
+    mockupType: "poster-frame-silver",
+  },
+  {
+    title: "Butterfly Smile - Vector Illustration",
+    category: "Graphic Design",
+    img: butterflyIllustration,
+    images: [butterflyIllustration],
+    role: "Vector Illustrator",
+    tools: ["Illustrator"],
+    description: "A playful, vibrant cartoon character vector illustration of a smiling butterfly. Features clean line tracing, harmonious pastel color palettes (soft lavender, pink, and sunny yellow), and expressive character styling suitable for digital storytelling and children's media.",
+    link: "https://www.behance.net/revathikaliyap",
+    isPortrait: false,
+    mockupType: "raw",
+  },
+  {
+    title: "Minimalist Cat Silhouette - Vector Art",
+    category: "Graphic Design",
+    img: catSilhouette,
+    images: [catSilhouette],
+    role: "Logo & Vector Artist",
+    tools: ["Illustrator"],
+    description: "A striking minimalist vector artwork featuring a stylized seated cat silhouette. Employs clever negative space balance, flowing continuous curves, and bold monochrome contrast ideal for brand identity, iconography, and print apparel.",
+    link: "https://www.behance.net/revathikaliyap",
+    isPortrait: true,
+    mockupType: "raw",
+  },
   {
     title: "Bloom & Bump - Comfort Maternity Pillow Ad",
     category: "Graphic Design",
@@ -218,7 +272,7 @@ export const projects = [
     title: "GourmetGo - Food Delivery App",
     category: "Mobile UI",
     img: app,
-    images: [app, menuScreen, onBoarding, foodDeliveryHome, foodDeliveryConfirmation, foodDeliveryStatus],
+    images: [app, foodDelivery, menuScreen, onBoarding, foodDeliveryHome, foodDeliveryConfirmation, foodDeliveryStatus],
     role: "Lead UI/UX Designer",
     tools: ["Figma", "Illustrator"],
     description: "An elegant, user-centric mobile application designed to streamline the food ordering and delivery experience. Focuses on mouth-watering visual presentations, highly intuitive navigation, smooth menu interactions, and real-time order tracking.",
@@ -420,7 +474,7 @@ function Projects() {
 
         {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <div
               key={project.title}
               onClick={() => setSelectedProject(project)}
