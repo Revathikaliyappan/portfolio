@@ -5,10 +5,14 @@ import figma from "../assets/figma.png";
 import canva from "../assets/canva.png";
 import photoshop from "../assets/photoshop.jpg";
 import illustrator from "../assets/illustrator.png";
+import photocraft from "../assets/photocraft.webp";
+import vectorcraft from "../assets/vectorcraft.webp";
 
 const tools = [
   { name: "PHOTOSHOP", img: photoshop, color: "hover:shadow-blue-600/20" },
+  { name: "PHOTOCRAFT", img: photocraft, color: "hover:shadow-sky-500/20" },
   { name: "ILLUSTRATOR", img: illustrator, color: "hover:shadow-orange-600/20" },
+  { name: "VECTORCRAFT", img: vectorcraft, color: "hover:shadow-amber-500/20" },
   { name: "FIGMA", img: figma, color: "hover:shadow-purple-500/20" },
   { name: "CANVA", img: canva, color: "hover:shadow-cyan-400/20" },
   { name: "WORDPRESS", img: wordpress, color: "hover:shadow-blue-400/20" },
@@ -29,11 +33,11 @@ function Tools() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className={`glass p-6 rounded-2xl transition-all duration-500 hover:-translate-y-2 group ${tool.color} hover:shadow-2xl`}
+              className={`glass p-6 rounded-2xl transition-all duration-500 hover:-translate-y-2 group ${tool.color} hover:shadow-2xl w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)] md:w-[calc(25%-18px)] lg:w-[calc(20%-20px)] max-w-[200px] flex flex-col items-center justify-center`}
             >
               <div className="relative mb-4 flex justify-center">
                 <div className="absolute inset-0 bg-white/5 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
