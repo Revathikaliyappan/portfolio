@@ -51,7 +51,23 @@ import mattressAd from "../assets/promoting beds.jpg";
 import gamingHeadphones from "../assets/headphone sales.jpg";
 import aachiChilli from "../assets/red chill powder.jpg";
 
+// Import LearnForge assets
+import learnforgeDashboard from "../assets/learnforgedashboard.png";
+import learnforgeShowcase from "../assets/learnforge-showcase.jpg";
+
 const projects = [
+  {
+    title: "LearnForge - Academic & Learning Portal",
+    category: "Web & POS",
+    img: learnforgeDashboard,
+    images: [learnforgeDashboard, learnforgeShowcase],
+    role: "UI/UX & Frontend Designer",
+    tools: ["React", "Tailwind CSS", "Supabase", "Figma"],
+    description: "An all-in-one academic administration and student learning portal. Features seamless course management, real-time evaluation analytics, secure material distribution, automated attendance tracking, and live campus communication unified into a clean, modern dashboard interface.",
+    link: "https://learnforgedashboard.vercel.app",
+    linkText: "View Live Project",
+    mockupType: "desktop",
+  },
   {
     title: "Aura Laxe - Sun-Kissed Savings Ad",
     category: "Graphic Design",
@@ -851,7 +867,9 @@ function ProjectModal({ project, onClose }) {
               rel="noreferrer"
               className="flex-grow flex items-center justify-center gap-2 px-6 py-4 bg-white text-black font-bold rounded-2xl hover:scale-[1.02] active:scale-95 transition-all duration-300 text-sm shadow-xl shadow-white/5"
             >
-              <span>View Behance Case Study</span>
+              <span>
+                {project.linkText || (project.link?.includes("behance.net") ? "View Behance Case Study" : "View Live Project")}
+              </span>
               <FaExternalLinkAlt size={12} className="ml-1" />
             </a>
 
