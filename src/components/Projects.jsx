@@ -51,23 +51,9 @@ import mattressAd from "../assets/promoting beds.jpg";
 import gamingHeadphones from "../assets/headphone sales.jpg";
 import aachiChilli from "../assets/red chill powder.jpg";
 
-// Import LearnForge assets
-import learnforgeDashboard from "../assets/learnforgedashboard.png";
-import learnforgeShowcase from "../assets/learnforge-showcase.jpg";
+
 
 const projects = [
-  {
-    title: "LearnForge - Academic & Learning Portal",
-    category: "Web & POS",
-    img: learnforgeDashboard,
-    images: [learnforgeDashboard, learnforgeShowcase],
-    role: "UI/UX & Frontend Designer",
-    tools: ["React", "Tailwind CSS", "Supabase", "Figma"],
-    description: "An all-in-one academic administration and student learning portal. Features seamless course management, real-time evaluation analytics, secure material distribution, automated attendance tracking, and live campus communication unified into a clean, modern dashboard interface.",
-    link: "https://learnforgedashboard.vercel.app",
-    linkText: "View Live Project",
-    mockupType: "desktop",
-  },
   {
     title: "Aura Laxe - Sun-Kissed Savings Ad",
     category: "Graphic Design",
